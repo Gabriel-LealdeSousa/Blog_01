@@ -1,0 +1,13 @@
+{% extends "blog/base.html" %}
+
+{% block title %} Adicione um comentário {% endblock %}
+
+{% block content %}
+
+    {% if comment %}
+        <h2>Seu comentário foi adicionado!</h2>
+        <a href="{{ post.get_absolute_url }}">Voltar para o post</a>
+    {% else %}
+        {% include "blog/post/includes/comment_form.html" %}
+    {% endif %}
+{% endblock %}

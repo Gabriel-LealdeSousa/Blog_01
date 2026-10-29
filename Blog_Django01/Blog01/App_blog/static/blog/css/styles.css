@@ -1,0 +1,92 @@
+/* Importação das fontes fortes e características do Google Fonts */
+@import url('https://googleapis.com');
+
+/* Configuração geral */
+body {
+    /* Fonte do corpo: Limpa, legível e altamente profissional */
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    /* Fundo preto suave/azulado para evitar cansaço visual */
+    background-color: #0B0F19;
+    /* Texto principal em branco suave/gelo para melhor contraste */
+    color: #E2E8F0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Área principal do conteúdo */
+#content {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+/* Barra lateral */
+#sidebar {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    /* Azul escuro fechado e elegante */
+    background-color: #1E293B;
+    border-radius: 8px;
+    /* Borda sutil para dar profundidade estilo SaaS/Landing page */
+    border: 1px solid #334155;
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+    /* Branco absoluto para destacar os títulos na hierarquia visual */
+    color: #FFFFFF;
+    /* Fonte dos Títulos: 'Syne' traz um visual imponente, brutalista e moderno */
+    font-family: 'Syne', Impact, sans-serif;
+    /* Peso extra forte (Extra Bold) característico de páginas de impacto */
+    font-weight: 800;
+    /* Ajuste de espaçamento para deixar as letras juntas e agressivas */
+    letter-spacing: -0.03em;
+    text-transform: uppercase; /* Opcional: deixa os títulos em caixa alta para mais força */
+}
+
+/* Links */
+a {
+    /* Azul elétrico vibrante focado em conversão e clique */
+    color: #38BDF8; 
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    /* Tom de azul ligeiramente mais claro ao passar o mouse */
+    color: #7DD3FC;
+    text-decoration: underline;
+}
+
+/* Tags */
+.tags {
+    /* Tom azul cinzento para informações secundárias */
+    color: #94A3B8;
+    font-size: 14px;
+    /* Fonte dos títulos aplicada de leve nas tags para criar consistência */
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Lista de posts */
+#content article {
+    /* Fundo escuro intermediário para destacar os posts do fundo da página */
+    background-color: #111827;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    /* Borda suave para acabamento premium */
+    border: 1px solid #1F2937;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 15px;
+    /* Peso ideal para o texto corrido não cansar os olhos */
+    font-weight: 400;
+}
