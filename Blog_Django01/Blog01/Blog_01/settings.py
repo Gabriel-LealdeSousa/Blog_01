@@ -96,13 +96,14 @@ WSGI_APPLICATION = 'Blog_01.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
 
-DATABASES = {   #Add Postgre e excluido sqqlite3
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('BLOG_DB_NAME'),
-        'USER': config('BLOG_DB_USER'),
-        'PASSWORD': config('BLOG_DB_PASSWORD'),
-        'HOST': config('BLOG_DB_HOST'),
+        'NAME': config('BLOG_DB_NAME', default='blog'),
+        'USER': config('BLOG_DB_USER', default='postgres'),
+        'PASSWORD': config('BLOG_DB_PASSWORD', default='1232'),
+        'HOST': config('BLOG_DB_HOST', default='localhost'),
+        'PORT': config('BLOG_DB_PORT', default='5432'),
     }
 }
 
